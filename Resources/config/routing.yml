@@ -1,3 +1,0 @@
-olix_forms_ext_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: OlixFormsExtBundle:Default:index }
