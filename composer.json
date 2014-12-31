@@ -17,6 +17,12 @@
 		"bootstrap",
 		"forms"
 	],
+	"require": {
+        "symfony/symfony": ">= 2.6",
+        "symfony/form": ">= 2.6",
+        "components/jquery": "2.*",
+        "nostalgiaz/bootstrap-switch": "3.2.*"
+    },
 	"autoload" : {
 		"psr-4" : {
 			"Olix\\FormsExtBundle" : ""

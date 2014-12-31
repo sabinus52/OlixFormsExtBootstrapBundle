@@ -2,5 +2,10 @@
 {# Blocks WIDGETS des formulaires #}
 {##}
 
+{#% extends "form_div_layout.html.twig" %#}
+
+{% block olix_switch_widget %}
+    <input type="checkbox" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />
+{% endblock olix_switch_widget %}
 
 
