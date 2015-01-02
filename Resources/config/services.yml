@@ -1,12 +1,12 @@
 services:
 
     olix.formsext.twig.extension.form:
-        class: Olix\FormsExtBundle\Twig\Extension\FormExtension
+        class: Olix\FormsExtBootstrapBundle\Twig\Extension\FormExtension
         arguments: [ "@twig.form.renderer" ]
         tags:
             - { name: twig.extension }
 
     olix.formsext.type.switch:
-        class: Olix\FormsExtBundle\Form\Type\SwitchType
+        class: Olix\FormsExtBootstrapBundle\Form\Type\SwitchType
         tags:
             - { name: form.type, alias: olix_switch }

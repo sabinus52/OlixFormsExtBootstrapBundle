@@ -5,10 +5,10 @@
  * @author Olivier <sabinus52@gmail.com>
  *
  * @package Olix
- * @subpackage FormsExtBundle
+ * @subpackage FormsExtBootstrapBundle
  */
 
-namespace Olix\FormsExtBundle\Twig\Extension;
+namespace Olix\FormsExtBootstrapBundle\Twig\Extension;
 
 use Symfony\Bridge\Twig\Form\TwigRendererInterface;
 use Symfony\Component\Form\FormView;

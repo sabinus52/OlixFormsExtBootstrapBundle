@@ -1,8 +1,8 @@
 {
-	"name" : "sabinus52/olix-formsext-bundle",
-	"description" : "Symfony OlixFormsExtBundle",
+	"name" : "olix/formsext-bootstrap-bundle",
+	"description" : "Bootstrap forms extended into Symfony2",
 	"type" : "symfony-bundle",
-	"homepage" : "https://github.com/sabinus52/OlixFormsExtBundle",
+	"homepage" : "https://github.com/sabinus52/OlixFormsExtBootstrapBundle",
 	"license" : "GPL-2.0",
 	"authors" : [{
 			"name" : "Olivier",
@@ -25,7 +25,7 @@
     },
 	"autoload" : {
 		"psr-4" : {
-			"Olix\\FormsExtBundle" : ""
+			"Olix\\FormsExtBootstrapBundle" : ""
 		}
 	}
 }

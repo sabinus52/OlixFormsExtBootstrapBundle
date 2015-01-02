@@ -1,22 +1,22 @@
 <?php
 /**
- * Bundle OlixFormsExtBundle
+ * Bundle OlixFormsExtBootstrapBundle
  * 
  * @author Olivier <sabinus52@gmail.com>
  * 
  * @package Olix
- * @subpackage FormsExtBundle
+ * @subpackage FormsExtBootstrapBundle
  */
 
-namespace Olix\FormsExtBundle;
+namespace Olix\FormsExtBootstrapBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-use Olix\FormsExtBundle\DependencyInjection\Compiler\FormPass;
+use Olix\FormsExtBootstrapBundle\DependencyInjection\Compiler\FormPass;
 
 
-class OlixFormsExtBundle extends Bundle
+class OlixFormsExtBootstrapBundle extends Bundle
 {
 
     /**

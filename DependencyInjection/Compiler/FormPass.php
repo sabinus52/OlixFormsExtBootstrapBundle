@@ -5,10 +5,10 @@
  * @author Olivier <sabinus52@gmail.com>
  * 
  * @package Olix
- * @subpackage FormsExtBundle
+ * @subpackage FormsExtBootstrapBundle
  */
 
-namespace Olix\FormsExtBundle\DependencyInjection\Compiler;
+namespace Olix\FormsExtBootstrapBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -19,14 +19,14 @@ class FormPass implements CompilerPassInterface
     public function process(ContainerBuilder $container)
     {
         $resTwig = $container->getParameter('twig.form.resources');
-        $isImported = in_array('OlixFormsExtBundle:Form:widgets_layout.html.twig', $resTwig)
-                   && in_array('OlixFormsExtBundle:Form:javascript_layout.html.twig', $resTwig)
-                   && in_array('OlixFormsExtBundle:Form:stylesheet_layout.html.twig', $resTwig);
+        $isImported = in_array('OlixFormsExtBootstrapBundle:Form:widgets_layout.html.twig', $resTwig)
+                   && in_array('OlixFormsExtBootstrapBundle:Form:javascript_layout.html.twig', $resTwig)
+                   && in_array('OlixFormsExtBootstrapBundle:Form:stylesheet_layout.html.twig', $resTwig);
         
         if (!$isImported) {
-            $resTwig[] = 'OlixFormsExtBundle:Form:widgets_layout.html.twig';
-            $resTwig[] = 'OlixFormsExtBundle:Form:javascript_layout.html.twig';
-            $resTwig[] = 'OlixFormsExtBundle:Form:stylesheet_layout.html.twig';
+            $resTwig[] = 'OlixFormsExtBootstrapBundle:Form:widgets_layout.html.twig';
+            $resTwig[] = 'OlixFormsExtBootstrapBundle:Form:javascript_layout.html.twig';
+            $resTwig[] = 'OlixFormsExtBootstrapBundle:Form:stylesheet_layout.html.twig';
             $container->setParameter('twig.form.resources', $resTwig);
         }
     }

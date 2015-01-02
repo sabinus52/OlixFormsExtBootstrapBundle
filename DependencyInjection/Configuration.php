@@ -1,6 +1,6 @@
 <?php
 
-namespace Olix\FormsExtBundle\DependencyInjection;
+namespace Olix\FormsExtBootstrapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

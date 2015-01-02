@@ -14,11 +14,11 @@
  * @link http://www.bootstrap-switch.org/
  * 
  * @package Olix
- * @subpackage FormsExtBundle
+ * @subpackage FormsExtBootstrapBundle
  *
  */
 
-namespace Olix\FormsExtBundle\Form\Type;
+namespace Olix\FormsExtBootstrapBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
