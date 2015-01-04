@@ -10,3 +10,7 @@ services:
         class: Olix\FormsExtBootstrapBundle\Form\Type\SwitchType
         tags:
             - { name: form.type, alias: olix_switch }
+    olix.formsext.type.datepicker:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\DatePickerType
+        tags:
+            - { name: form.type, alias: olix_datepicker }

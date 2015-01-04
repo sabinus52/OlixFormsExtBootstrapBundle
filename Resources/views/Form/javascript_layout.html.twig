@@ -8,6 +8,7 @@
     {% endfor %}
 {% endblock %}
 
+{% block button_javascript "" %}
 
 {% block olix_switch_javascript %}
 {% spaceless %}
@@ -19,3 +20,23 @@
 {% endspaceless %}
 {% endblock olix_switch_javascript %}
 
+
+{% block olix_datepicker_javascript %}
+{% spaceless %}
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#{{ id }}_datepicker').datetimepicker({
+                language: "{{ config.locale }}",
+                format: "{{ config.format }}",
+                todayBtn : {{ config.todayBtn|default('false') }},
+                pickerPosition : "{{ config.pickerPosition }}",
+                startDate : "{{ config.startDate }}",
+                endDate : "{{ config.endDate }}",
+                autoclose: 1,
+                startView: 2,
+                minView: 2
+            });
+        });
+    </script>
+{% endspaceless %}
+{% endblock olix_datepicker_javascript %}
