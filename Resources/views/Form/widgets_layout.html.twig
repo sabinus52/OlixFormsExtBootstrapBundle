@@ -26,3 +26,11 @@
     </div>
 {% endblock olix_timepicker_widget %}
 
+
+{% block olix_datetimepicker_widget %}
+    <div class="input-group date" id="{{ id }}_datepicker" style="width:250px;">
+        {{- block('form_widget_simple') -}}
+        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+    </div>
+{% endblock olix_datetimepicker_widget %}
