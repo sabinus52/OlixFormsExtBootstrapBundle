@@ -268,10 +268,10 @@ class DateConverter
             'ccccc' => '',
             'cccccc' => '',
             'a' => 'p',         // am/pm marker
-            'h' => 'h',         // 12-hour format of an hour without leading zeros 1 to 12h
-            'hh' => 'hh',       // 12-hour format of an hour with leading zeros, 01 to 12 h
-            'H' => 'H',         // 24-hour format of an hour without leading zeros 0 to 23h
-            'HH' => 'HH',       // 24-hour format of an hour with leading zeros, 00 to 23 h
+            'h' => 'H',         // 12-hour format of an hour without leading zeros 1 to 12h
+            'hh' => 'HH',       // 12-hour format of an hour with leading zeros, 01 to 12 h
+            'H' => 'h',         // 24-hour format of an hour without leading zeros 0 to 23h
+            'HH' => 'hh',       // 24-hour format of an hour with leading zeros, 00 to 23 h
             'k' => '',          // hour in day (1~24)
             'kk' => '',         // hour in day (1~24)
             'K' => '',          // hour in am/pm (0~11)

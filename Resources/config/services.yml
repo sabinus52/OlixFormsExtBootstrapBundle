@@ -14,3 +14,7 @@ services:
         class: Olix\FormsExtBootstrapBundle\Form\Type\DatePickerType
         tags:
             - { name: form.type, alias: olix_datepicker }
+    olix.formsext.type.timepicker:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\TimePickerType
+        tags:
+            - { name: form.type, alias: olix_timepicker }
