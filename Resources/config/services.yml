@@ -22,3 +22,39 @@ services:
         class: Olix\FormsExtBootstrapBundle\Form\Type\DateTimePickerType
         tags:
             - { name: form.type, alias: olix_datetimepicker }
+    olix.formsext.type.select2_choice:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "choice" ]
+        tags:
+            - { name: form.type, alias: olix_select2_choice }
+    olix.formsext.type.select2_entity:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "entity" ]
+        tags:
+            - { name: form.type, alias: olix_select2_entity }
+    olix.formsext.type.select2_country:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "country" ]
+        tags:
+            - { name: form.type, alias: olix_select2_country }
+    olix.formsext.type.select2_language:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "language" ]
+        tags:
+            - { name: form.type, alias: olix_select2_language }
+    olix.formsext.type.select2_locale:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "locale" ]
+        tags:
+            - { name: form.type, alias: olix_select2_locale }
+    olix.formsext.type.select2_timezone:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "timezone" ]
+        tags:
+            - { name: form.type, alias: olix_select2_timezone }
+    olix.formsext.type.select2_currency:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "currency" ]
+        tags:
+            - { name: form.type, alias: olix_select2_currency }
+

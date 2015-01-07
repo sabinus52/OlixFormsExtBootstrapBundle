@@ -20,9 +20,10 @@
 	"require": {
         "symfony/symfony": ">= 2.6",
         "symfony/form": ">= 2.6",
-        "components/jquery": "2.*",
+        "components/bootstrap": "3.2.*",
         "nostalgiaz/bootstrap-switch": "3.2.*",
-        "components/bootstrap-datetimepicker": "2.3.*"
+        "components/bootstrap-datetimepicker": "2.3.*",
+        "ivaynberg/select2": "3.5.*"
     },
 	"autoload" : {
 		"psr-4" : {
