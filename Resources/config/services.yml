@@ -57,4 +57,9 @@ services:
         arguments: [ "currency" ]
         tags:
             - { name: form.type, alias: olix_select2_currency }
+    olix.formsext.type.select2_hidden:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\Select2Type
+        arguments: [ "hidden" ]
+        tags:
+            - { name: form.type, alias: olix_select2_hidden }
 
