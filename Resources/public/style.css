@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.doublelist-header {
+    color: #333;
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px 1px 0px 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+    padding: 3px 10px;
+}

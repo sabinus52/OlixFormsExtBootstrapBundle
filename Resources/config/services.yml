@@ -62,4 +62,14 @@ services:
         arguments: [ "hidden" ]
         tags:
             - { name: form.type, alias: olix_select2_hidden }
+    olix.formsext.type.doublelist_choice:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\DoubleListType
+        arguments: [ "choice" ]
+        tags:
+            - { name: form.type, alias: olix_doublelist_choice }
+    olix.formsext.type.doublelist_entity:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\DoubleListType
+        arguments: [ "entity" ]
+        tags:
+            - { name: form.type, alias: olix_doublelist_entity }
 

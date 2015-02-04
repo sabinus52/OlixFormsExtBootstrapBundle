@@ -23,11 +23,47 @@
         "components/bootstrap": "3.2.*",
         "nostalgiaz/bootstrap-switch": "3.2.*",
         "components/bootstrap-datetimepicker": "2.3.*",
-        "ivaynberg/select2": "3.5.*"
+        "ivaynberg/select2": "3.5.*",
+        "components/doublelist": "0.9.*"
     },
 	"autoload" : {
 		"psr-4" : {
 			"Olix\\FormsExtBootstrapBundle" : ""
 		}
-	}
+	},
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "components/doublelist",
+                "type": "component",
+                "version": "0.9.12",
+                "dist": {
+                    "url": "https://github.com/lou/multi-select/archive/0.9.12.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/lou/multi-select.git",
+                    "type": "git",
+                    "reference": "0.9.12"
+                },
+                "extra": {
+                    "component": {
+                        "scripts": [
+                            "js/jquery.multi-select.js"
+                        ],
+                        "styles": [
+                            "css/multi-select.css"
+                        ],
+                        "files": [
+                            "img/*.png"
+                        ]
+                    }
+                },
+                "require": {
+                    "robloach/component-installer": "*"
+                }
+            }
+        }
+    ]
 }
