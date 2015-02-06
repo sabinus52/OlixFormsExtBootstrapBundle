@@ -1,69 +1,34 @@
 {
-	"name" : "olix/formsext-bootstrap-bundle",
-	"description" : "Bootstrap forms extended into Symfony2",
-	"type" : "symfony-bundle",
-	"homepage" : "https://github.com/sabinus52/OlixFormsExtBootstrapBundle",
-	"license" : "GPL-2.0",
-	"authors" : [{
-			"name" : "Olivier",
-			"email" : "sabinus52@gmail.com"
-		}
-	],
-	"keywords" : [
-		"olix",
-		"symfony",
-		"admin",
-		"back office",
-		"bootstrap",
-		"forms"
-	],
-	"require": {
+    "name" : "olix/formsext-bootstrap-bundle",
+    "description" : "Bootstrap forms extended into Symfony2",
+    "type" : "symfony-bundle",
+    "homepage" : "https://github.com/sabinus52/OlixFormsExtBootstrapBundle",
+    "license" : "GPL-2.0",
+    "authors" : [{
+            "name" : "Olivier",
+            "email" : "sabinus52@gmail.com"
+        }
+    ],
+    "keywords" : [
+        "olix",
+        "symfony",
+        "admin",
+        "back office",
+        "bootstrap",
+        "forms"
+    ],
+    "require": {
         "symfony/symfony": ">= 2.6",
         "symfony/form": ">= 2.6",
         "components/bootstrap": "3.2.*",
         "nostalgiaz/bootstrap-switch": "3.2.*",
-        "components/bootstrap-datetimepicker": "2.3.*",
+        "components/bootstrap-datetimepicker": "dev-master",
         "ivaynberg/select2": "3.5.*",
-        "components/doublelist": "0.9.*"
+        "components/multi-select": "dev-master"
     },
-	"autoload" : {
-		"psr-4" : {
-			"Olix\\FormsExtBootstrapBundle" : ""
-		}
-	},
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "components/doublelist",
-                "type": "component",
-                "version": "0.9.12",
-                "dist": {
-                    "url": "https://github.com/lou/multi-select/archive/0.9.12.zip",
-                    "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/lou/multi-select.git",
-                    "type": "git",
-                    "reference": "0.9.12"
-                },
-                "extra": {
-                    "component": {
-                        "scripts": [
-                            "js/jquery.multi-select.js"
-                        ],
-                        "styles": [
-                            "css/multi-select.css"
-                        ],
-                        "files": [
-                            "img/*.png"
-                        ]
-                    }
-                },
-                "require": {
-                    "robloach/component-installer": "*"
-                }
-            }
+    "autoload" : {
+        "psr-4" : {
+            "Olix\\FormsExtBootstrapBundle\\" : ""
         }
-    ]
+    }
 }
