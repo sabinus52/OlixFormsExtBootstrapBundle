@@ -88,7 +88,13 @@
 {% spaceless %}
     <script type="text/javascript">
         jQuery(document).ready(function($) {
-            $('#{{ id }}').select2({{ config|json_encode|raw }});
+            var $config = {{ config|json_encode|raw }};
+            $config = $.extend($config, {
+                {% for cfgname, cfgvalue in cfgfct %}
+                    {{ cfgname }}: {{ cfgvalue|raw }},
+                {% endfor %}
+            });
+            $('#{{ id }}').select2($config);
         });
     </script>
 {% endspaceless %}
@@ -103,6 +109,9 @@
             
             // custom configs
             $config = $.extend($config, {
+                {% for cfgname, cfgvalue in cfgfct %}
+                {{ cfgname }}: {{ cfgvalue|raw }},
+                {% endfor %}
                 {% if query is defined %}
                 query: {{ query }}
                 {% endif %}

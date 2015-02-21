@@ -33,6 +33,41 @@ use Symfony\Component\Form\FormBuilderInterface;
 class Select2Type extends AbstractType
 {
 
+    /**
+     * Liste des paramètres "Select2" comme type "function"
+     * @var array
+     */
+    static protected $paramsFunction = array(
+        'maximumSelectionSize',
+        'placeholderOption',
+        'id',
+        'matcher',
+        'sortResults',
+        'formatSelection',
+        'formatResult',
+        'formatResultCssClass',
+        'formatNoMatches',
+        'formatAjaxError',
+        'formatInputTooShort',
+        'formatInputTooLong',
+        'formatSelectionTooBig',
+        'formatLoadMore',
+        'createSearchChoice',
+        'createSearchChoicePosition',
+        'initSelection',
+        'tokenizer',
+        'tags',
+        'containerCss',
+        'containerCssClass',
+        'dropdownCss',
+        'dropdownCssClass',
+        'adaptContainerCssClass',
+        'adaptDropdownCssClass',
+        'escapeMarkup',
+        'nextSearchTerm',
+    );
+
+
     private $widget;
 
 
@@ -59,7 +94,15 @@ class Select2Type extends AbstractType
 
     public function buildView(FormView $view, FormInterface $form, array $options)
     {
-        $view->vars['config'] = $options['config'];
+        // Séparation des paramètres de type de 'function' et les autres
+        $view->vars['config'] = $view->vars['cfgfct'] = array();
+        foreach ($options['config'] as $config => $value) {
+            if (in_array($config, self::$paramsFunction)) {
+                $view->vars['cfgfct'][$config] = $value;
+            } else {
+                $view->vars['config'][$config] = $value;
+            }
+        }
         
         if (isset($options['query'])) {
             $view->vars['query'] = $options['query'];

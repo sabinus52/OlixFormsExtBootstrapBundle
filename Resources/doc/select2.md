@@ -62,6 +62,12 @@ Whether or not a clear button is displayed when the select box has a selection.
 Number of characters necessary to start a search.
 
 #### Others options
+
+**Note** : For the parameters with double type,
+by default this parameter is `function`.
+
+For the `string`, type for example `'containerCssClass' => "'my_class'",`
+
 See http://select2.github.io/select2/ for the list
 
 ### Attributes
