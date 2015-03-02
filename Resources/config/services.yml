@@ -72,4 +72,7 @@ services:
         arguments: [ "entity" ]
         tags:
             - { name: form.type, alias: olix_doublelist_entity }
-
+    olix.formsext.type.collection:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\CollectionType
+        tags:
+            - { name: form.type, alias: olix_collection }

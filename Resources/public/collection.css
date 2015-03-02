@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.olix-collection {
+    position: relative;
+}
+
+.olix-collection > .actions {
+    position: relative;
+    text-align: right;
+}
+
+.olix-collection > .collection .sortable {
+    cursor: crosshair;
+}
+
+.olix-collection-sortable-highlight {
+    background: #f4f4f4;
+    border: 1px dashed #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+fieldset.olix-collection-item {
+    position: relative;
+    padding-right: 50px;
+}
+
+fieldset.olix-collection-item > .actions {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}

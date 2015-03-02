@@ -147,3 +147,23 @@
     </script>
 {% endspaceless %}
 {% endblock olix_doublelist_javascript %}
+
+
+{% block olix_collection_javascript %}
+{% spaceless %}
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#{{ id }}').olixCollection({
+                allow_add: {{ allow_add|default('false') }},
+                allow_delete: {{ allow_delete|default('false') }},
+                sortable: {{ sortable|default('false') }},
+                sortable_field: '{{ sortable_field }}'
+            });
+        });
+    </script>
+    
+    {% for child in form %}
+        {{ form_javascript(child) }}
+    {% endfor %}
+{% endspaceless %}
+{% endblock olix_collection_javascript %}

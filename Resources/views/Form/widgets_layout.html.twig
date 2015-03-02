@@ -39,3 +39,38 @@
 {% block olix_select2_hidden_row %}
     {{ block('form_row') }}
 {% endblock %}
+
+
+{% block olix_collection_widget %}
+    {% if prototype is defined %}
+        {% set item = prototype %}
+        {%- set attr = attr|merge({'data-prototype': block('olix_collection_item') }) -%}
+    {% endif %}
+    {% set attr = attr|merge({'class': 'olix-collection'}) %}
+    <div {{ block('widget_container_attributes') }}>
+        <div class="collection">
+        {% for item in form %}
+            {{ block('olix_collection_item') }}
+        {% endfor %}
+        </div>
+        {% if allow_add %}
+            <div class="actions">
+                <a class="btn btn-sm btn-primary insert" title="Ajouter"><i class="fa fa-plus"></i></a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock olix_collection_widget %}
+
+{% block olix_collection_item %}
+    <div class="{% if sortable %}sortable{% endif %}">
+        <fieldset class="olix-collection-item">
+            {{ form_widget(item) }}
+            {{ form_errors(item) }}
+            {% if allow_delete %}
+                <div class="actions">
+                    <a class="btn btn-sm btn-danger delete" title="Enlever"><i class="fa fa-times"></i></a>
+                </div>
+            {% endif %}
+        </fieldset>
+    </div>
+{% endblock olix_collection_item %}
