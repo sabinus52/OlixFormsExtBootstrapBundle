@@ -10,3 +10,5 @@ Liste des widgets disponibles :
 - [Select2](Resources/doc/select2.md)
 - [Bootstrap switch](Resources/doc/switch.md)
 - [Double list mutliselect](Resources/doc/doublelist.md)
+- [Collection](Resources/doc/collection.md)
+- [Checkbox Addon](Resources/doc/checkbox-addon.md)

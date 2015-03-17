@@ -74,3 +74,11 @@
         </fieldset>
     </div>
 {% endblock olix_collection_item %}
+
+
+{%- block olix_checkbox_widget -%}
+    <div class="input-group" id="{{ id }}_group">
+        <span class="input-group-addon"><input type="checkbox"></span>
+        {{ form_widget(form) }}
+    </div>
+{%- endblock olix_checkbox_widget -%}

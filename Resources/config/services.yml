@@ -76,3 +76,15 @@ services:
         class: Olix\FormsExtBootstrapBundle\Form\Type\CollectionType
         tags:
             - { name: form.type, alias: olix_collection }
+    olix.formsext.type.checkbox_text:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\CheckboxAddonType
+        arguments: [ "text" ]
+        tags:
+            - { name: form.type, alias: olix_checkbox_text }
+    olix.formsext.type.checkbox_choice:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\CheckboxAddonType
+        arguments: [ "choice" ]
+        tags:
+            - { name: form.type, alias: olix_checkbox_choice }
+
+    

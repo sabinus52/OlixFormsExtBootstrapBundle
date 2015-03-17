@@ -167,3 +167,12 @@
     {% endfor %}
 {% endspaceless %}
 {% endblock olix_collection_javascript %}
+
+
+{%- block olix_checkbox_javascript -%}
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#{{ id }}_group').olixCheckboxAddon({{ config|json_encode|raw }});
+        });
+    </script>
+{%- endblock olix_checkbox_javascript -%}
