@@ -37,10 +37,8 @@ class CollectionType extends AbstractType
             'sortable_field' => 'order',
         ));
         
-        $resolver->setAllowedTypes(array(
-            'sortable' => array('bool'),
-            'sortable_field' => array('string'),
-        ));
+        $resolver->setAllowedTypes('sortable', 'bool');
+        $resolver->setAllowedTypes('sortable_field', 'string');
     }
 
 
