@@ -86,5 +86,8 @@ services:
         arguments: [ "choice" ]
         tags:
             - { name: form.type, alias: olix_checkbox_choice }
-
+    olix.formsext.type.autocomplete:
+        class: Olix\FormsExtBootstrapBundle\Form\Type\AutoCompleteType
+        tags:
+            - { name: form.type, alias: olix_autocomplete }
     

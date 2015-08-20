@@ -12,3 +12,4 @@ Liste des widgets disponibles :
 - [Double list mutliselect](Resources/doc/doublelist.md)
 - [Collection](Resources/doc/collection.md)
 - [Checkbox Addon](Resources/doc/checkbox-addon.md)
+- [Auto completion](Resources/doc/autocomplete.md)

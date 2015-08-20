@@ -24,11 +24,24 @@
         "nostalgiaz/bootstrap-switch": "3.2.*",
         "components/bootstrap-datetimepicker": "dev-master",
         "ivaynberg/select2": "3.5.*",
-        "components/multi-select": "dev-master"
+        "components/multi-select": "dev-master",
+        "twitter/typeahead.js": "0.11.*"
     },
     "autoload" : {
         "psr-4" : {
             "Olix\\FormsExtBootstrapBundle\\" : ""
+        }
+    },
+    "extra": {
+        "component": {
+            "twitter/typeahead.js": {
+                "scripts": [
+                    "dist/typeahead.jquery.js"
+                ],
+                "files": [
+                    "dist/*.js"
+                ]
+            }
         }
     }
 }

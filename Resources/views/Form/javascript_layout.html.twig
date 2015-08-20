@@ -176,3 +176,27 @@
         });
     </script>
 {%- endblock olix_checkbox_javascript -%}
+
+{%- block olix_autocomplete_javascript -%}
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            var $dataset = {{ dataset|json_encode|raw }};
+            $dataset = $.extend($dataset, {
+                datumTokenizer: Bloodhound.tokenizers.whitespace,
+                queryTokenizer: Bloodhound.tokenizers.whitespace
+            });
+            var engine = new Bloodhound($dataset);
+            
+            $('#{{ id }}').typeahead({
+                highlight: {{ config.highlight|default(true) }},
+                hint: {{ config.hint|default('true') }},
+                minLength: {{ config.minLength|default(2) }},
+                classNames: {{ config.classNames|json_encode|raw }}
+            },{
+                limit: {{ config.limit|default(8) }},
+                {% if config.display is defined %}display: {{ config.display|raw }},{% endif %}
+                source: engine
+            });
+        });
+    </script>
+{%- endblock olix_autocomplete_javascript -%}
