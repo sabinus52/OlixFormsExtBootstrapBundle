@@ -18,13 +18,13 @@
         "forms"
     ],
     "require": {
-        "symfony/symfony": ">= 2.6",
-        "symfony/form": ">= 2.6",
+        "symfony/symfony": "~2.8",
+        "symfony/form": "~2.8",
         "components/bootstrap": "3.2.*",
         "nostalgiaz/bootstrap-switch": "3.2.*",
-        "components/bootstrap-datetimepicker": "dev-master",
+        "components/bootstrap-datetimepicker": "2.*",
         "ivaynberg/select2": "3.5.*",
-        "components/multi-select": "dev-master",
+        "components/multi-select": "0.9.*",
         "twitter/typeahead.js": "0.11.*"
     },
     "autoload" : {
